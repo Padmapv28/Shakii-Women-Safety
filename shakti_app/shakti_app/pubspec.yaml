@@ -1,0 +1,89 @@
+name: shakti_app
+description: Women's Safety App — Offline-First, AI-Powered
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.4.9
+
+  # Maps & Location
+  google_maps_flutter: ^2.5.0
+  geolocator: ^10.1.0
+  geocoding: ^2.1.1
+  flutter_background_geolocation: ^4.14.0
+
+  # Firebase
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.16.0
+  cloud_firestore: ^4.14.0
+  firebase_messaging: ^14.7.10
+  firebase_storage: ^11.6.0
+
+  # Offline Storage
+  sqflite: ^2.3.0
+  path_provider: ^2.1.2
+  hive_flutter: ^1.1.0
+
+  # Communication
+  telephony: ^0.2.0          # SMS (works offline via SIM)
+  flutter_phone_direct_caller: ^2.1.1
+
+  # Voice / Speech
+  speech_to_text: ^6.3.0
+
+  # Camera & Media
+  camera: ^0.10.5+9
+  image_picker: ^1.0.7
+  record: ^5.0.4            # Audio recording
+
+  # Face Recognition (on-device)
+  google_mlkit_face_detection: ^0.9.0
+  google_mlkit_face_mesh_detection: ^0.3.0
+
+  # Battery
+  battery_plus: ^4.0.2
+
+  # Background Tasks
+  workmanager: ^0.5.2
+  flutter_background_service: ^5.0.5
+
+  # Notifications
+  flutter_local_notifications: ^16.3.0
+
+  # Sensors (power button detection)
+  sensors_plus: ^4.0.2
+  volume_controller: ^2.0.7
+
+  # UI
+  flutter_svg: ^2.0.9
+  lottie: ^3.0.0
+  cupertino_icons: ^1.0.6
+
+  # Networking
+  dio: ^5.4.0
+  connectivity_plus: ^5.0.2
+
+  # Utils
+  intl: ^0.19.0
+  uuid: ^4.3.3
+  permission_handler: ^11.3.0
+  encrypt: ^5.0.3            # Encrypt local data
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/bengaluru_risk_zones.json
+    - assets/voice_model/         # Offline speech model
+    - assets/images/
